@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
+
+
+Route::get('/category', [CategoriesController::class, 'index'])->name('category.index');
+Route::post('/category', [CategoriesController::class, 'store'])->name('category.store');
+Route::delete('/category/{id}', [CategoriesController::class, 'destroy'])->name('category.destroy');
+
+
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
+
+
+
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
