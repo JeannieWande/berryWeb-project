@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->foreign('category_id', 'fk_product_categories')->references('id')->on('categories')->onDelete('cascade');
+        Schema::table('categories', function (Blueprint $table) {
+            $table->string('category_image')->nullable()->after('category_name');
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->dropForeign(['fk_product_categories']); 
+        Schema::table('categories', function (Blueprint $table) {
+            $table->dropColumn('category_image');
         });
     }
 };

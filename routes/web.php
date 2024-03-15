@@ -23,6 +23,15 @@ Route::get('admin', function(){
     return view('admin/admin_dashboard');
 });
 
+Route::get('/productPage/{id}', [ProductController::class, 'productpage']);
+
+
+
+Route::get('/homepage', [CategoriesController::class, 'home'])->name('user.home');
+Route::get('/products/{id}', [ProductController::class, 'products'])->name('user.products');
+
+
+
 Route::get('/category', [CategoriesController::class, 'index'])->name('category.index');
 Route::post('/category', [CategoriesController::class, 'store'])->name('category.store');
 Route::delete('/category/{id}', [CategoriesController::class, 'destroy'])->name('category.destroy');

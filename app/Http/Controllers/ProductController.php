@@ -9,6 +9,20 @@ use App\Models\category;
 
 class ProductController extends Controller
 {
+    public function products($id){
+        $products=product::where('category_id', $id)->get();
+      
+        return view('user/products', compact('products'));
+
+    }
+    public function productpage($id){
+
+        $productpage=product::where('id', $id)->get();
+     
+        return view('/user.productPage', compact('productpage'));
+
+    }
+    
     public function index(){
         $products=product::all();
         $categories=category::all();

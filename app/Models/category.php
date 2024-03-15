@@ -10,5 +10,6 @@ class category extends Model
     use HasFactory;
     protected $fillable=[
         'category_name',
+        'category_image'
     ];
 }
