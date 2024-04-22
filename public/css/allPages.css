@@ -1,0 +1,733 @@
+/*HOMEPAGE CSS*/
+/*drop down css*/
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .main-nav a:hover, .dropdown:hover .dropbtn {
+    color: blue;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #000;
+  }
+  
+  .dropdown-content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .cart {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -12px; /* Adjust this value to align the number properly */
+    right: -12px; /* Adjust this value to align the number properly */
+    background-color: #eecaca; /* Background color of the number */
+    color: #151414; /* Text color of the number */
+    border-radius: 100%; /* Make it a circle */
+    padding: 4px; /* Adjust padding to increase the size of the circle */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+
+
+hr{
+    margin: 0px 50px;
+}
+/*styles for top section of the web*/
+.extra-txt{
+    text-align:center;
+    font-style:arial;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.top-img img{
+    width: 100%;
+    border-radius: 3px;
+    margin: 0px;
+}
+
+.top-text{
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+}
+.top-text p{
+    width: 100%;
+    
+}
+.top-text h1{
+    font-size: 70px;
+    font-family: Freestyle Script;
+    margin: auto;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 80%;
+    
+}
+.top-text h2{
+    font-size:25px ;
+    font-family:  sans-serif;
+    font-weight: lighter;
+    margin: 10px;
+}
+.top-btn{
+    background-color: rgba(14, 87, 14, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 25%;
+    color: rgb(17, 16, 16);
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+
+/*styles of the top service section*/
+.services{
+    background-color: rgb(249, 242, 242);
+    border-radius: 100%;
+    width: 200px;
+    text-align: center;
+    padding: 30px;
+  
+}
+.services i{
+    font-size: 30px;
+}
+.top-services-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgba(244, 196, 196, 0.1);
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px; 
+}
+.top-services-col2{
+   display: grid;
+   grid-template-rows: repeat(1, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   width: 80%;
+   margin-left: 20px;
+   padding: 10px;
+}
+.services h3{
+    font-weight: 900;
+    font-size: 17px;
+    font-family: corbel;
+}
+.services p{
+    font-size: 15px;
+}
+/*styles of the category container*/
+.category-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.category{
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 20px 8px;
+    height: 250px;
+    width: 250px;
+    padding: 5px;
+  
+}
+.category-details p {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 1px 2px;
+    
+ 
+}
+.category-details p:hover{
+    background-color: rgba(91, 218, 91, 0.88);
+
+}
+.category-details{
+    margin-top: 20px;
+}
+.category-details p a{
+    text-decoration: none;
+    color: black;  
+    font-size: 20px;
+    font-family: ' monospace';
+}
+.category img{
+    width: 100%;
+    height: 150px;  
+}
+.our-cat{
+    text-align: center;
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: 500;
+  
+}
+.our-cat2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.category-wrapper{
+    margin-top: 50px;
+}
+/*styles for the middle text*/
+.middle-text {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 246, 247);
+    padding: 10px;
+}
+.middle-txt-img img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 4px;   
+}
+
+.middle-text-txt p{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 10px;
+    text-align: center;
+    font-family: arial;
+    width: 100%;
+    font-style: sans-serif;
+    color: rgb(242, 90, 90);
+}
+.middle-text-txt button{
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(52, 132, 52);
+    border-radius: 5px;
+    margin-left: 280px;
+    margin-top: 15px;
+    
+}
+.middle-text-txt button a{
+    text-decoration: none;
+    color: rgb(250, 225, 225);
+    font-style: monospace;
+    font-weight: 500;
+
+}
+/* front product section*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.column{
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.front-product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.front-product{
+    border-radius: 5px;
+    margin: 20px 8px;
+    height: 320px;
+    width: 220px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+   
+    
+}
+.front-product-inner{
+    padding: 10px;
+}
+.front-product img{
+    width: 100%;
+    height: 150px;
+    
+}
+
+
+.front-product-detail p {
+    text-align: justify;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+.p_Name{
+    font-size: 17px;
+    font-family: arial;
+}
+
+.priceP{
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 900;
+
+}
+.r_P{
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 500;
+
+
+}
+
+.front-product-detail button{
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        width: 100px;
+        border-radius: 5px;
+        text-align: center;
+}
+
+.lower-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.col-img{
+    width: 50%;
+
+ }
+.col-img img{
+    width: 100%;
+}
+.col-txt{
+    width: 50%;
+
+}
+.col-txt h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: serif;
+
+}
+.col-txt button{
+    color: black;
+    background-color: rgb(72, 209, 72);
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin: 10px;
+}
+.col-txt button a{
+    text-decoration: none;
+    
+}
+
+.col-txt p{
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 20px;
+    margin-left: 10px;
+    
+}
+
+/*END OF HOMEPAGE CSS*/
+
+
+/*START OF PRODUCTS DISPLAY CSS*/
+
+.berries-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    
+}
+.p-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.desc-wrapper{
+    width: 50%;
+}
+.p-d-wrapper{
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 20px 8px;
+    height: 320px;
+    width: 300px;
+
+
+}
+
+.p-image img{
+    width: 100%;
+    height: 150px;
+     
+}
+.p-data{
+    text-align: justify;
+    margin: 0px 10px;
+
+}
+.p-data .name{
+    font-family: corbel;
+    margin-top: 10px;
+    
+}
+.p-data .price{
+    margin-top: 10px;
+}
+.p-data a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+   
+}
+.p-data a:hover{
+    color: blue;
+}
+
+.p-btn{
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: wheat;
+}
+.p-h1{
+    text-align: justify;
+    margin-left: 30px;
+    font-family: corbel;
+}
+/*END OF PRODUCT DISPLAY CSS*/
+
+/*START OF PRODUCTPAGE CSS*/
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.col1, .col2{
+ width: 40%;
+}
+.col1 img{
+    width: 80%;
+    background-color: rgb(224, 218, 218);
+    padding: 10px;
+    margin-top: 0px 10px;
+    
+}
+.col2{
+    position: relative;
+    margin-top: 10px;
+   
+}
+hr{
+    margin: 10px 100px 10px 0px;
+}
+.col2 h2{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+   
+}
+.col2 .desc{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+
+
+
+}
+.col2 .price{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold ;
+    color: orangered;
+
+}
+.col2 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    background-color: white;
+    margin: 20px 0px;
+    width: min-content;
+ 
+}
+th{
+    font-size: 12px;
+    font-family: arial;
+}
+.quant-price td{
+    padding: 10px;
+
+}
+.quant-price:hover td{
+    background-color: orangered;
+    color: white;
+   
+}
+
+.td-price{
+    color: orangered;
+}
+ul{
+    margin: 10px;
+}
+td button{
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 3px;
+    width: 100px;
+    font-size: 10px;
+}
+.inp-btn td{
+    padding: 10px;
+
+
+}
+
+.input{
+    padding: 10px;
+    width: 80px;
+}
+
+.col3{
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 4 1fr;
+    gap: 10px;
+}
+.box{
+    background-color:rgba(0,0, 0, 0.1);
+    padding: 15px;
+    margin-right: 10px;
+   
+}
+.box p{
+    font-weight: bold;
+    width: fit-content;
+    font-family: arial;
+    font-size: 12px;
+}
+.stock{
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+
+
+}
+/*END OF PRODUCTPAGE CSS*/
+
+/*START OF CART CSS*/
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    width: 500px;
+
+    
+}
+.c-w{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  
+
+}
+.cartImg img{
+    width: 100%;
+    height: 80px;
+    
+}
+
+.cartData{
+    width: 90%;
+    font-family: arial;
+    font-size: 15px;
+    color: #333;
+    margin: 10px;
+}
+.total-price{
+    font-family: arial;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fcfbfb;
+    margin-left: 20px;
+    position: fixed;
+    left: 800px;
+    bottom: 400px;
+
+    
+}
+.total-price button{
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    font-size: 15px;
+    font-family: arial;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+/*END OF CART CSS*/
+
+.modal-card{
+    width: 500px; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9; 
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    position: absolute;
+    left: 50%;
+    top: 250%;
+    transform: translate(-50%, -50%);
+
+    
+
+  }
+
+.sale-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHECKOUT SECTION*/
+
+.formdata{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 10px;
+
+}
+.checkoutInput{
+    width: 50%;
+    height: 35px;
+}
+
+.locationData{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+
+   
+ 
+}
+.l_check{
+    display: grid;
+    grid-column: auto;
+    margin: 10px;
+}
+.l_checkoutInput{
+    width: 100%;
+    height: 35px;
+
+}
+.addressData{
+    color: rgb(142, 142, 236);
+    width: 500px; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9; 
+    margin-bottom: 20px;
+
+}
+.addressData .name{
+    color: rgb(76, 76, 130);
+}
+
+.order-container{
+    margin:20px 0px 20px 120px;
+    
+}
+
+

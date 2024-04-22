@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
-    <title>@yield('title')</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/2e9efed9fe.js" crossorigin="anonymous"></script>
+
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <!--<link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,28 +16,12 @@
     -->
     <!-- Scripts -->
    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}} 
-   @yield('specific')
+    @yield('specific')
    
     @stack('style')
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">wandy's BerryFarm</div>
-            <div class="nav-links">
-                <a href="{{ url('/homepage') }}">Home</a>
-                <a href="">Our Products</a>
-                <a href="">Farming Guide</a>
-            </div>
-            <div class="cart">
-                <a href="">Cart</a>
-            </div>
-            <div class="registration">
-                <a href="">LOG IN</a>
-                <a href="">REGISTER</a>
-            </div>
-        </nav>
-    </header>
+    
 
     <div id="content">
         @yield('content')
@@ -74,5 +60,6 @@
             </div>
         </div>
     </footer>
+    @yield('script')
 </body>
 </html>

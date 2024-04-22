@@ -7,7 +7,7 @@
     {{ session('message') }}
     @endif
     
-       <form action="{{ route('category.store') }}" method="post" enctype="multipart/form-data">
+       <form action="{{ route('adminCatStore') }}" method="post" enctype="multipart/form-data">
           @csrf
           <h1>ADD NEW CATEGORY</h1>
           <div class="cat-data">
@@ -31,6 +31,7 @@
                <th>Category_Name</th>
                <th>category_image</th>
                <th>Deletion</th>
+               <th>Edit</th>
             </tr>
             @foreach ($categoryData as $item)
             <tr>
@@ -40,12 +41,15 @@
             
                
                 <td>
-                    <form action="{{ route('category.destroy', $item->id) }}" method="post">
+                    <form action="{{ route('adminCatDelete', $item->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('delete')
                         <button type="submit">delete</button>
                     </form>
                 </td> 
+                <td>
+                   <a href="{{url('/admin/category', $item->id)}}"> <button type="submit">Edit</button></a>
+                </td>
                
             </tr>
             @endforeach

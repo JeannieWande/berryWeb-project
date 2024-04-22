@@ -13,8 +13,8 @@
     <nav>
         <ul>
             <li><a href="{{ url('/admin') }}">Home</a></li>
-            <li><a href="{{ url('/category') }}">ADD CATEGORY</a></li>
-            <li><a href="{{ url('/product') }}">ADD PRODUCTS</a></li>
+            <li><a href="{{ url('admin/category') }}">ADD CATEGORY</a></li>
+            <li><a href="{{ url('admin/product') }}">ADD PRODUCTS</a></li>
         </ul>
     </nav>
     
