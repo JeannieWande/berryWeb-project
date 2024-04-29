@@ -10,6 +10,6 @@ class price extends Model
     use HasFactory;
     protected $fillables=[
         'retail_price',
-        'wholesale_price'
+        'wholesale_price',
     ]
 }
